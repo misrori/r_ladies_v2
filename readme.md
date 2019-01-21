@@ -15,7 +15,7 @@
 ***
 
 ## Ok lets deep dive into shiny
-    + https://www.youtube.com/watch?v=_0ORRJqctHE&list=PL6wLL_RojB5xNOhe2OTSd-DPkMLVY9DfB
+* shiny tutorial https://www.youtube.com/watch?v=_0ORRJqctHE&list=PL6wLL_RojB5xNOhe2OTSd-DPkMLVY9DfB
 
 ### What is shiny?
 * ui.R is the part for the user interface

@@ -5,6 +5,8 @@ library(data.table)
 library(shinythemes)
 library(shinycssloaders)
 library(shinydashboard)
+library(jsonlite)
+library(rsconnect)
 #--------------------------------------------------------------#
 ################          Version1        #####################
 #--------------------------------------------------------------#
@@ -13,6 +15,7 @@ library(shinydashboard)
 
 fluidPage(
         uiOutput('coins'),
+        #tags$head(includeScript("google-analytics.js")),
         radioButtons('time', 'Choose agregation', choiceNames = c('minute','hour','day'), choiceValues = c('histominute','histohour','histoday'), selected = 'histoday' ),
         dateRangeInput('dateRange', label = 'Date range', start = Sys.Date() - 30, end = Sys.Date()),
 
@@ -36,7 +39,8 @@ fluidPage(
 # 
 # fluidPage(theme = shinytheme("united"),
 # #https://shiny.rstudio.com/reference/shiny/1.0.1/navbarPage.html    https://rstudio.github.io/shinythemes/
-# 
+
+#           #tags$head(includeScript("google-analytics.js")),
 #           navbarPage(
 #             title="Crypto report",
 #             tabPanel("Charts",
@@ -81,7 +85,7 @@ fluidPage(
 
 # 
 # shinyUI(
-# 
+#    #tags$head(includeScript("google-analytics.js")),
 #   dashboardPage( skin = 'green',
 # 
 #     dashboardHeader(title= 'Steem detective'),

@@ -44,8 +44,21 @@
    + Registration: http://www.shinyapps.io/
 
 * Google analytics
-    
- 
+
+
+## Packages to install
+
+* install.packages(shiny)
+* install.packages(plotly)
+* install.packages(DT)
+* install.packages(data.table)
+* install.packages(shinythemes)
+* install.packages(shinycssloaders)
+* install.packages(shinydashboard)
+* install.packages(jsonlite)
+* install.packages(rsconnect)
+
+
  
 
 

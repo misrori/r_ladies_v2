@@ -5,6 +5,7 @@ library(data.table)
 library(DT)
 
 
+
 source("my_functions.R")
 
 
@@ -44,7 +45,5 @@ function(input, output, session) {
     })
   
   output$summary_plot <- renderPlotly(my_reactive_plot())
-  
-  
   
 }

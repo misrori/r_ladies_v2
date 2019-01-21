@@ -23,8 +23,8 @@
     + shinythemes https://rstudio.github.io/shinythemes/
     + shinydashboard:  https://rstudio.github.io/shinydashboard/appearance.html
     + output:
-        + textOutput
-        + plotOutput
+        + textOutput 
+        + plotOutput 
         + plotlyOutput
         + dataTableOutput
     + use the elementname send out from the server
@@ -32,7 +32,7 @@
 * server.R this part is hiden from the user here we calculate and make the elements showed in the ui:
     + render: plot, text, plotly, ggplot, 
         + datatable: https://rstudio.github.io/DT/  
-        + network: https://christophergandrud.github.io/networkD3/
+        + network: https://christophergandrud.github.io/networkD3/  https://euforrasokatlathatoan.shinyapps.io/meszaros/
         + map: https://rstudio.github.io/leaflet/shiny.html
         + ui: render ui element to make the values of the element in the server side.
     + reactive values
@@ -44,6 +44,10 @@
    + Registration: http://www.shinyapps.io/
 
 * Google analytics
+* Working group at CEU 
+
+#### Contact: https://www.linkedin.com/in/orsosmihaly/
+
 
 
 ## Packages to install

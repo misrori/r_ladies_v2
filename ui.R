@@ -34,7 +34,7 @@ fluidPage(
 #####
 
 # 
-# fluidPage(theme = shinytheme("slate"),
+# fluidPage(theme = shinytheme("united"),
 # #https://shiny.rstudio.com/reference/shiny/1.0.1/navbarPage.html    https://rstudio.github.io/shinythemes/
 # 
 #           navbarPage(
@@ -67,7 +67,7 @@ fluidPage(
 # 
 #     )
 # )
-# 
+
 
 
 #####
@@ -81,26 +81,26 @@ fluidPage(
 
 # 
 # shinyUI(
-#   
-#   dashboardPage(
-#     
+# 
+#   dashboardPage( skin = 'green',
+# 
 #     dashboardHeader(title= 'Steem detective'),
 #     dashboardSidebar(
-#       
+# 
 #       uiOutput('coins'),
 #       radioButtons('time', 'Choose agregation', choiceNames = c('minute','hour','day'),
 #                    choiceValues = c('histominute','histohour','histoday'), selected = 'histoday' ),
 #       dateRangeInput('dateRange',
 #                      label = 'Date range',
 #                      start = Sys.Date() - 30, end = Sys.Date()),
-#       
+# 
 #       #good video of shinydashboard ui  https://www.youtube.com/watch?v=fUXBL5bk20M
 #       sidebarMenu(id='tabs',
 #                   menuItem('Plot', tabName = 'my_plot', icon = icon("home")),
 #                   menuItem('Data', tabName = 'my_data', icon = icon("user"))
-#   
-#                   
-#       )#sidebarmenu 
+# 
+# 
+#       )#sidebarmenu
 #     ),#dashboardSidebar
 #     dashboardBody(
 #       tabItems(
@@ -108,18 +108,18 @@ fluidPage(
 #           tabName = "my_plot",
 #               withSpinner( plotlyOutput("summary_plot") ,type = 4)
 #         ),
-#         
+# 
 #         tabItem(
 #           tabName = "my_data",
 #           withSpinner(dataTableOutput('coin_data'),type = 4)
 #         )
-#         
+# 
 #     )#tabitems
 #     )
 # )
 # 
 # )
-# 
+
 
 #####
 
